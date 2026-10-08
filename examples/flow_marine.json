@@ -1,0 +1,9 @@
+{
+  "steps": [
+    {"op": "tpow", "power": 2.0},
+    {"op": "bandpass", "f1": 3.0, "f2": 6.0, "f3": 80.0, "f4": 100.0},
+    {"op": "decon", "operator_length": 0.2, "gap": 0.024, "prewhite": 0.1, "ensemble": true},
+    {"op": "mute", "picks": "0:0.05, 3000:1.6", "mode": "top", "taper": 0.03},
+    {"op": "agc", "window": 0.5}
+  ]
+}

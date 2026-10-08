@@ -1,0 +1,8 @@
+* text=auto
+*.py text eol=lf
+*.sgy binary
+*.SGY binary
+*.segy binary
+*.SEGY binary
+*.pdf binary
+*.png binary

@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seisgama"
+dynamic = ["version"]
+description = "Seismic reflection data QC and basic processing (land and marine) - SEG-Y viewer, trace QC, gain, filters, deconvolution, velocity analysis, NMO and brute stack"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "CC-BY-NC-4.0" }
+authors = [
+    { name = "Theodosius Marwan Irnaka" },
+    { name = "Wahyudi Wahyudi" },
+    { name = "Eddy Hartantyo" },
+    { name = "Adien Akhmad Mufaqih" },
+    { name = "Ade Anggraini" },
+    { name = "Wiwit Suryanto", email = "ws@ugm.ac.id" },
+]
+keywords = ["seismic", "SEG-Y", "geophysics", "quality control", "seismic processing"]
+classifiers = [
+    "License :: Free for non-commercial use",
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "matplotlib>=3.6",
+    "PySide6>=6.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/maswiet/SeisGama"
+Paper = "https://doi.org/10.1155/2018/2913591"
+
+[project.optional-dependencies]
+test = ["pytest>=7", "segyio>=1.9"]
+build = ["pyinstaller>=6"]
+
+[project.scripts]
+seisgama = "seisgama.cli:main"
+
+[project.gui-scripts]
+seisgama-gui = "seisgama.gui.app:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "seisgama.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["seisgama*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use SeisGama, please cite the SEISGAMA paper below."
+title: "SeisGama: seismic reflection data QC and basic processing"
+version: 2.0.0
+license: CC-BY-NC-4.0
+repository-code: "https://github.com/maswiet/SeisGama"
+authors:
+  - family-names: Irnaka
+    given-names: Theodosius Marwan
+  - family-names: Wahyudi
+    given-names: Wahyudi
+  - family-names: Hartantyo
+    given-names: Eddy
+  - family-names: Mufaqih
+    given-names: Adien Akhmad
+  - family-names: Anggraini
+    given-names: Ade
+  - family-names: Suryanto
+    given-names: Wiwit
+    email: ws@ugm.ac.id
+    affiliation: "Universitas Gadjah Mada"
+preferred-citation:
+  type: article
+  title: "SEISGAMA: A Free C# Based Seismic Data Processing Software Platform"
+  authors:
+    - family-names: Irnaka
+      given-names: Theodosius Marwan
+    - family-names: Wahyudi
+      given-names: Wahyudi
+    - family-names: Hartantyo
+      given-names: Eddy
+    - family-names: Mufaqih
+      given-names: Adien Akhmad
+    - family-names: Anggraini
+      given-names: Ade
+    - family-names: Suryanto
+      given-names: Wiwit
+  journal: "International Journal of Geophysics"
+  volume: 2018
+  start: 2913591
+  year: 2018
+  doi: "10.1155/2018/2913591"
+  publisher:
+    name: "Hindawi"
